@@ -7,7 +7,6 @@ const morgan = require("morgan");
 const authRoutes = require("./routes/authRoutes");
 const testRoutes = require("./routes/testRoutes");
 const compilerRoutes = require("./routes/compilerRoutes");
-const adminRoutes = require("./routes/adminRoutes");
 dotenv.config();
 
 const app = express();
@@ -24,7 +23,6 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/test", testRoutes);
 app.use("/api/compiler", compilerRoutes);
-app.use("/api/admin", adminRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Endpoint not found" });

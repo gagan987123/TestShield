@@ -4,7 +4,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js
+- **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Compiler**: Judge0 API
